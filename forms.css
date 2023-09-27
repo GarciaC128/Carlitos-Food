@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(img/hamburguesa.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+}
+
+header {
+    background: whitesmoke;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin-left: 300px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 100px;
+    float: left;
+    padding: 12px 0;
+    position: relative;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #bd0003;
+}
+
+nav ul li a::before {
+    width: 0%;
+    background: #bd0003;
+    height: 5px;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    display: block;
+    transition: width 0.2s;
+    align-items: end;
+}
+
+nav ul li a:hover:before {
+    width: 100%;
+}
+
+.elementos {
+    display: flex;
+    justify-content: center;
+}
+
+.seleccion {
+    background: #bd0003;
+    width: 100%;
+}
+
+.seleccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.seleccion li {
+    position: relative;
+    padding: 0px 50px;
+    margin: 0;
+}
+
+.seleccion p {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 12px 20px;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.seleccion a {
+    text-decoration: none;
+    color: #bd0003;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px 20px;
+    transition: color 0.2s;
+}
+
+.seleccion a:hover {
+    color: black;
+}
+
+.seleccion p:hover {
+    color: black;
+}
+
+/* Estilo para el menú desplegable */
+.opciones-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 0;
+    min-width: 160px;
+}
+
+.opciones:hover .opciones-items {
+    display: block;
+    width: 100%;
+}
+
+.opciones-items li {
+    padding: 0px 0px;
+    margin: 0%;
+    width: 100%;
+}
+
+.opciones-items a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.opciones-items a:hover {
+    color: #bd0003;
+    background: #dcdcdc;
+}
+
+.opciones {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+}
+
+.container {
+    min-width: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+   background-color: #bd0003;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:black;
+}
+
+form label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],form input[type="number"],
+form input[type="datetime-local"],textarea,
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+form input[type="file"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 16px;  
+}
+form textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background: black;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background: #444;
+}
+
+.espacio-arriba {
+    height: 20px; /* Puedes ajustar la altura según tu preferencia */
+}
+
+/* Estilo para el espacio entre el formulario y el footer */
+.espacio-abajo {
+    height: 20px; /* Puedes ajustar la altura según tu preferencia */
+}
+
+footer {
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: white; /* Cambia el color del texto según tus preferencias */
+    text-align: center;
+    padding: 20px;
+}

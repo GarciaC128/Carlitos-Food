@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+         <img src="img/logito.png" alt="Logo">
+         <nav>
+         <ul>
+         <li><a href="index.html">Inicio</a></li>
+         <li><a href="nuestro_menu.html">Nuestro Menu</a></li>
+         <li><a href="contactanos.html">Contactanos</a></li>
+        </ul> 
+        </nav>
+        </div>
+    </header>    
+    <div class="seleccion">
+        <ul class="elementos">
+            <li class="opciones">
+                <p>Usuario</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_usuario.html">Formulario </a></li>
+                    <li><a href="tabla_usuarios.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p>Sucursal</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_sucursal.html">Formulario</a></li>
+                    <li><a href="tabla_sucursal.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p>Empleados</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_Empleado.html">Formulario</a></li>
+                    <li><a href="tabla_empleados.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p>Pedidos</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_pedidos.html">Formulario</a></li>
+                    <li><a href="tabla_pedidos.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p href="#">Menu</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_menu.html">Formulario</a></li>
+                    <li><a href="tabla_menu.html">Tabla</a></li>
+                </ul>
+            </li>
+            <!-- Repite el mismo patrón para los otros elementos de la lista -->
+        </ul>
+    </div>    <div class="espacio-arriba"></div>
+    <div class="container">
+        <h1>Formulario Empleado</h1>
+        <form>
+            
+            <label for="nombre">Id del empleado:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa el id del empleado" required>
+
+            <label for="nombre">Nombre del empleado:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required>
+
+            <label for="nombre">RFC del empleado:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese el RFC" required>
+
+            <label for="empleado">ocupacion del empleado:</label>
+            <input type="text" id="empleado" name="empleado" placeholder="Ingrese la ocupacion" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="sueldo">Sueldo del empleado:</label>
+            <input type="number" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Igrese el sueldo" required>
+
+            <!--<label for="fecha_hora">Fecha y Hora:</label>
+            <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>-->
+
+            <label>sexo:</label>
+            <div class="radio-group">
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="espacio-abajo"></div>
+    <footer>
+        García Morales Carlos Santiago 5-I
+       </footer>
+</body>
+</html>

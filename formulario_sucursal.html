@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <header>
+        <div class="menu">
+         <img src="img/logito.png" alt="Logo">
+         <nav>
+         <ul>
+         <li><a href="index.html">Inicio</a></li>
+         <li><a href="nuestro_menu.html">Nuestro Menu</a></li>
+         <li><a href="contactanos.html">Contactanos</a></li>
+        </ul> 
+        </nav>
+        </div>
+    </header>    
+    <div class="seleccion">
+        <ul class="elementos">
+            <li class="opciones">
+                <p>Usuario</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_usuario.html">Formulario </a></li>
+                    <li><a href="tabla_usuarios.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p>Sucursal</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_sucursal.html">Formulario</a></li>
+                    <li><a href="tabla_sucursal.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p>Empleados</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_Empleado.html">Formulario</a></li>
+                    <li><a href="tabla_empleados.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p>Pedidos</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_pedidos.html">Formulario</a></li>
+                    <li><a href="tabla_pedidos.html">Tabla</a></li>
+                </ul>
+            </li>
+            <li class="opciones">
+                <p href="#">Menu</p>
+                <ul class="opciones-items">
+                    <li><a href="formulario_menu.html">Formulario</a></li>
+                    <li><a href="tabla_menu.html">Tabla</a></li>
+                </ul>
+            </li>
+            <!-- Repite el mismo patrón para los otros elementos de la lista -->
+        </ul>
+    </div>
+  
+    <div class="espacio-arriba"></div>
+    <div class="container">
+        <h1>Formulario de Sucursal</h1>
+        <form>
+            
+            <label for="nombre">Id de la sucursal:</label>
+            <input type="text" id="id" name="id" placeholder="Ingresa el id" required>
+
+            <label for="nombre">Nombre de la sucursal:</label>
+            <input type="text" id="nombtr" name="nombre" placeholder="Ingrese el nombre" required>
+
+            <label for="nombre">dirección de la sucursal:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese la direccion" required>
+
+            <label for="email">Horario de sucursal:</label>
+            <input type="text" id="horario" name="horario" placeholder="Ingrese el horario" required>
+
+            <label for="nombre">calificación de la sucursal:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese la calificacion" required>
+
+            <label for="nombre">Capacidad de la sucursal:</label>
+            <input type="text" id="capacidad" name="capacidad" placeholder="Ingrese la capacidad" required>
+
+            <label for="fecha_nacimiento">Telefono de la sucursal:</label>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Ingrese el telefono" required>
+
+            <!--<label for="fecha_hora">Fecha y Hora:</label>
+            <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>-->
+
+            <label for="mensaje">Servicios de la sucursal:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Ingrese los servicios de la sucursal" rows="4" required></textarea>
+            
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="espacio-abajo"></div>
+    <footer>
+        García Morales Carlos Santiago 5-I
+       </footer>
+</body>
+</html>
